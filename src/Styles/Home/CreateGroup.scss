@@ -46,6 +46,7 @@
     .plant_table_wrapper {
       margin-top: 30px;
       border-bottom: 1px solid #e1e1e1;
+      overflow-x: auto;
       @media (max-width: 992px) {
         overflow-x: auto;
       }
