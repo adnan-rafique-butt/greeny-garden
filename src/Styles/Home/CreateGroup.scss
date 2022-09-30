@@ -13,9 +13,17 @@
       display: none;
     }
   }
+  .create_group_wrapper {
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
   .crete_group {
     padding: 40px;
     flex: 1;
+    @media (max-width: 992px) {
+      width: 90%;
+    }
     h5 {
       font-weight: 600;
       font-size: 28px;
@@ -37,6 +45,9 @@
     .plant_table_wrapper {
       margin-top: 30px;
       border-bottom: 1px solid #e1e1e1;
+      @media (max-width: 992px) {
+        overflow-x: auto;
+      }
       .table_header {
         display: flex;
         align-items: center;
@@ -105,6 +116,11 @@
         font-size: 16px;
         color: #403e3e;
       }
+    }
+  }
+  .create_btm_group_btns {
+    @media (max-width: 992px) {
+      width: 90%;
     }
   }
   .cancel_btn {

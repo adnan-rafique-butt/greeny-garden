@@ -75,6 +75,7 @@ const CreateGroup = () => {
     <Box className="create_group_wrapper">
       <Box className="ads_container"></Box>
       <Box
+        className="create_group_wrapper"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -229,6 +230,7 @@ const CreateGroup = () => {
           </Box>
         </Box>
         <Box
+          className="create_btm_group_btns"
           sx={{
             display: "flex",
             alignItemsCenter: "center",
