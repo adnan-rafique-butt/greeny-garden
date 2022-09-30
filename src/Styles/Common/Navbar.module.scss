@@ -1,0 +1,26 @@
+.h1{
+    display: none;
+}
+.BGwhite{
+    background-color: #fff !important;
+    box-shadow:none !important;
+    position: relative !important;
+}
+// custom container
+
+.custom_container{
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+}
+.toolbar_main{
+    padding: 20px 0 !important;
+}
+.logo{
+    padding: 10px 0 0 10px;
+}
+.Navitem{
+    font-weight: 600 !important;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}

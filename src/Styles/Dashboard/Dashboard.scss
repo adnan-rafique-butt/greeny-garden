@@ -1,0 +1,153 @@
+.dashboardLayout {
+  display: flex;
+  background-color: #fff;
+  min-height: 100vh;
+  .sidebar {
+    position: relative;
+    z-index: 2;
+    width: 261px;
+    background: #f9fff9;
+    .sidebarLogo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 90px;
+      .sidebarLogoImg {
+        margin: 0 auto;
+        img {
+          width: 200px;
+          height: 60px;
+        }
+      }
+      .toggleButton {
+        padding: 0;
+        margin-bottom: 8px;
+        min-width: unset;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    .sidebarMenu {
+      display: flex;
+      flex-direction: column;
+      .navMenuItem {
+        min-height: 45px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        padding: 0 30px;
+        text-decoration: none;
+        .menuItem {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        &.active {
+          background: #3aaa35;
+          color: #fff;
+          .menuItem {
+            p {
+              font-weight: 600;
+            }
+            .activeDot {
+              display: block;
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background-color: #3aaa35;
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sidebarClosed {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    background: #f9fff9;
+    display: none;
+    .sidebarLogo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 90px;
+      .sidebarLogoImg {
+        margin: 0 auto;
+        img {
+          width: 75px;
+          height: 60px;
+        }
+      }
+      .toggleButton {
+        padding: 0;
+        margin-bottom: 8px;
+        min-width: unset;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    .sidebarMenu {
+      display: flex;
+      flex-direction: column;
+      .navMenuItem {
+        min-height: 45px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 11px;
+        color: #000000;
+        padding: 0 5px;
+        text-decoration: none;
+        .menuItem {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        &.active {
+          background: #3aaa35;
+          color: #fff;
+          .menuItem {
+            p {
+              font-weight: 600;
+            }
+            .activeDot {
+              display: block;
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background-color: #3aaa35;
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contentSection {
+    flex: 1;
+    min-height: 100vh;
+    .contentBody {
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboardLayout {
+    .sidebar {
+      display: none;
+    }
+    .sidebarClosed {
+      display: block;
+    }
+  }
+}
