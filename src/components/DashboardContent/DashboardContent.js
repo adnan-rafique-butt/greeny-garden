@@ -158,6 +158,13 @@ const DashboardContent = () => {
                       <Typography>greenyGarden Master</Typography>{" "}
                       <Typography>35</Typography>
                     </Box>
+                    <Box
+                      className="table_progress green_progress"
+                      sx={{ borderTop: "1px solid #00000044" }}
+                    >
+                      <Typography>greenyGarden Master</Typography>{" "}
+                      <Typography>35</Typography>
+                    </Box>
                   </TableCell>
                   <TableCell>
                     <Box>
@@ -211,6 +218,13 @@ const DashboardContent = () => {
                   <TableCell>-</TableCell>
                   <TableCell>
                     <Box className="table_progress green_progress">
+                      <Typography>greenyGarden Master</Typography>{" "}
+                      <Typography>35</Typography>
+                    </Box>
+                    <Box
+                      className="table_progress green_progress"
+                      sx={{ borderTop: "1px solid #00000044" }}
+                    >
                       <Typography>greenyGarden Master</Typography>{" "}
                       <Typography>35</Typography>
                     </Box>
